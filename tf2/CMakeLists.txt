@@ -43,7 +43,7 @@ install(DIRECTORY include/${PROJECT_NAME}/
 if(BUILD_TESTING)
   set(ament_cmake_cppcheck_LANGUAGE c++)
   set(ament_cmake_cppcheck_ADDITIONAL_EXCLUDE "include/tf2/LinearMath/*")
-  set(ament_cmake_cpplint_ADDITIONAL_EXCLUDE ${PROJECT_SOURCE_DIR}/include/tf2/LinearMath)
+  set(ament_cmake_cpplint_ADDITIONAL_EXCLUDE LinearMath)
   set(ament_cmake_uncrustify_ADDITIONAL_ARGS LANGUAGE C++ --exclude LinearMath)
 
   find_package(ament_lint_auto REQUIRED)
